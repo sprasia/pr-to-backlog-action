@@ -1796,6 +1796,11 @@ function run() {
                                 comment: "Pull request [#" + pr.number + "](" + pr.pull_request.html_url + ") created by " + pr.sender.login + ": " + title,
                             };
                             break;
+                        case "edited":
+                            payload = {
+                                comment: "Pull request [#" + pr.number + "](" + pr.pull_request.html_url + ") updated by " + pr.sender.login + ": " + title
+                            };
+                            break;
                         case "closed":
                             if (pr.pull_request.merged) {
                                 payload = {
