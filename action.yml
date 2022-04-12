@@ -8,6 +8,9 @@ inputs:
     api-key:
         description: 'API_KEY of backlog'
         required: true
+outputs: 
+    issueKey:
+        description: 'Backlog issue key'
 runs:
     using: 'node12'
     main: 'dist/index.js'
