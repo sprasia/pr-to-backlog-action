@@ -9,7 +9,7 @@ inputs:
         description: 'API_KEY of backlog'
         required: true
 outputs: 
-    issueKey:
+    issue-key:
         description: 'Backlog issue key'
 runs:
     using: 'node12'
