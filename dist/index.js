@@ -1804,7 +1804,6 @@ function run() {
                         case "closed":
                             if (pr.pull_request.merged) {
                                 payload = {
-                                    statusId: 3,
                                     comment: "Pull request [#" + pr.number + "](" + pr.pull_request.html_url + ") merged and closed by " + pr.sender.login + ": " + title,
                                 };
                             }
